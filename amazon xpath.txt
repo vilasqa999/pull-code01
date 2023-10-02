@@ -1,0 +1,20 @@
+amzao xpath
+
+1. for single match
+//div[@class='sg-col-inner']/descendant::div[@class='sg-col-inner']/descendant::span[@class='a-price']/child::span[contains(text(),'₹12,599')]
+
+2. for two match
+
+//div[@class='sg-col-inner']/descendant::div[@class='a-section a-spacing-none puis-padding-right-small s-title-instructions-style']/descendant::span[contains(text(),'realme narzo 50i Prime (Mint Green 4GB RAM+64GB Storage) Octa-core Processor |5000 mAh Battery')]/ancestor::div[@class='a-section a-spacing-small a-spacing-top-small']/descendant::span[@class='a-price']/child::span[text()='₹7,499']
+
+
+3. flipcart single match 
+
+//div[@class='_3pLy-c row']/descendant::div[contains(text(),'POCO C51 (Power Black, 64 GB)')]/ancestor::div[@class='_3pLy-c row']/child::div[@class='col col-5-12 nlI3QM']/descendant::div[contains(text(),'₹6,499')]
+
+4. flipcart two match
+
+//div[@class='_3pLy-c row']/child::div[@class='col col-7-12']/child::div[text()='realme 11x 5G (Midnight Black, 128 GB)']/ancestor::div[@class='_3pLy-c row']/child::div[@class='col col-5-12 nlI3QM']/descendant::div[contains(text(),'₹15,999')]
+
+
+//*[local-name()='svg']/parent::button[@class='L0Z3Pu']
